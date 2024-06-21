@@ -21,7 +21,7 @@ composer config extra.symfony.endpoint https://raw.githubusercontent.com/KruseMe
 
 composer config extra.symfony.allow-contrib false
 
-composer require krme/shopware6-plugin-scripts:dev-develop --require-dev
+composer require --dev krme/shopware6-plugin-scripts:dev-develop
 
 # Installiert das Paket "krme/code-quality-meta"
 composer require krme/code-quality-meta:dev-main --no-scripts --no-plugins
