@@ -24,7 +24,9 @@ composer config extra.symfony.allow-contrib false
 composer require krme/code-quality-meta:dev-main --no-scripts --no-plugins
 
 # Aktualisiert die Symfony Flex-Rezepte
-composer recipes:install krme/code-quality-meta --force
-
-
+if [[ "$*" == *"--reset"* ]]; then
+    composer recipes:install krme/code-quality-meta --force --reset
+else
+    composer recipes:install krme/code-quality-meta --force
+fi
 
