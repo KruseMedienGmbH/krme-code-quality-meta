@@ -11,6 +11,7 @@ composer config allow-plugins.symfony/runtime true
 composer config allow-plugins.phpstan/extension-installer false
 composer config allow-plugins.bamarni/composer-bin-plugin true
 composer config repositories.krme-code-quality-meta git https://github.com/KruseMedienGmbH/krme-code-quality-meta.git
+composer config repositories.krmeshopware6pluginscripts git https://bitbucket.org/KruseMedien/krmeshopware6pluginscripts.git
 
 # Installiert Symfony Flex in Version 2
 composer require symfony/flex "~2" --no-scripts --no-plugins
