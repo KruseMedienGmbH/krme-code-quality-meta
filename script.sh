@@ -16,12 +16,7 @@ composer config extra.symfony.endpoint https://raw.githubusercontent.com/KruseMe
 composer config extra.symfony.allow-contrib false
 
 # Installiert das Paket "krme/code-quality-meta"
-composer require --dev krme/code-quality-meta:6.6.0 --no-scripts --no-plugins
+composer require --dev krme/code-quality-meta:6.6 --no-scripts --no-plugins
 
 # Aktualisiert die Symfony Flex-Rezepte
-if [[ "$*" == *"--reset"* ]]; then
-    composer recipes:install krme/code-quality-meta --force --reset
-else
-    composer recipes:install krme/code-quality-meta --force
-fi
-
+composer recipes:install krme/code-quality-meta --force
