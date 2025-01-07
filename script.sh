@@ -8,7 +8,7 @@ composer config allow-plugins.bamarni/composer-bin-plugin true
 composer config repositories.krme-code-quality-meta git https://github.com/KruseMedienGmbH/krme-code-quality-meta.git
 
 # Installiert Symfony Flex in Version 2
-composer require symfony/flex "~2" --no-scripts --no-plugins
+composer require --dev symfony/flex "~2" --no-scripts --no-plugins
 
 # Konfiguriert den Symfony Flex-Repository-Endpunkt
 composer config extra.symfony.endpoint https://raw.githubusercontent.com/KruseMedienGmbH/krme-recipes/flex/main/index.json
@@ -16,7 +16,7 @@ composer config extra.symfony.endpoint https://raw.githubusercontent.com/KruseMe
 composer config extra.symfony.allow-contrib false
 
 # Installiert das Paket "krme/code-quality-meta"
-composer require krme/code-quality-meta:6.6.0 --no-scripts --no-plugins
+composer require --dev krme/code-quality-meta:6.6.0 --no-scripts --no-plugins
 
 # Aktualisiert die Symfony Flex-Rezepte
 if [[ "$*" == *"--reset"* ]]; then
