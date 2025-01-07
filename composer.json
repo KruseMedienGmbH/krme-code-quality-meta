@@ -2,5 +2,5 @@
   "name": "krme/code-quality-meta",
   "license": "MIT",
   "description": "A meta package providing recipes for shopware code quality tools",
-  "version": "6.6.0"
+  "version": "6.6"
 }
