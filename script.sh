@@ -20,3 +20,9 @@ composer require --dev bamarni/composer-bin-plugin
 
 # Aktualisiert die Symfony Flex-Rezepte
 composer recipes:install krme/code-quality-meta --force
+
+# Cleanup
+sed -i '/"auto-scripts"/,+3 d' composer.json
+rm .env .env.dev src/Kernel.php src/Controller/.gitignore
+rm -rf bin config public templates translations
+rm script.sh
